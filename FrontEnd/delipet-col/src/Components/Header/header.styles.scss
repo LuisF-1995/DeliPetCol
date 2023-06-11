@@ -1,0 +1,52 @@
+.headerSection{
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 0px 5px 1px rgb(83 149 118);
+
+    .infoSectionHeader{
+        background-color: rgba(246, 181,29, 1);
+    }
+    .contactSectionHeader{
+        background-color: rgba(216, 253, 236, 1);
+    }
+    .searchSectionHeader{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 10vh;
+        gap: 5px;
+        background-color: rgba(216, 253, 236, 1);
+
+        #containerLogo{
+            max-width: 25%;
+            height: 115%;
+            overflow: hidden;
+    
+            #logoImg{
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    .mainSectionHeader{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100vw;
+        height: 5vh;
+        gap: 5px;
+        background-color: rgba(216, 253, 236, 1);
+    }
+}
+
+@media (max-width:600px) {
+    .mainSectionHeader{
+
+        #containerLogo{
+            max-width: 30%;
+            height: 100%;
+            overflow: hidden;
+        }
+    }
+}

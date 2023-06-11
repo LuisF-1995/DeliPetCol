@@ -1,0 +1,40 @@
+.headerNav{
+    background-color: none;
+
+    .navList{
+        display: flex;
+        justify-content: center;
+        align-items:end;
+        flex-wrap: wrap;
+        gap: 5px;
+
+        li{
+            text-align: center;
+            margin-bottom: 5px;
+            a{
+                color: #fff;
+            }
+        }
+    }
+}
+
+@media (max-width:600px) {
+    .headerNav{
+        width: 100%;
+        .headerNav__mobile{
+
+            .swapMenu{
+                border-bottom-right-radius: 50%;
+                background-color: rgb(250 240 190 / 90%);
+                border-bottom-left-radius: 50%;
+                color: gray;
+                padding: 6px 8px;
+                box-shadow: 0px 0px 5px 0px gray;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+}
